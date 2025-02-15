@@ -1,0 +1,111 @@
+import { motion } from "motion/react";
+const OurProjectSection2 = () => {
+  return (
+    <div className=" w-full h-[25vh] flex items-center gap-5 -mt-12   ">
+      <motion.dev
+        initial={{ x: 0 }}
+        animate={{ x: "-100%" }}
+        transition={{ duration: 20, ease: "linear", repeat: Infinity }}
+        className="scrollText flex items-center shrink-0 gap-5"
+      >
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            UX Design
+          </h1>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            UX Design
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            UX Design
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+      </motion.dev>
+      <motion.dev
+        initial={{ x: 0 }}
+        animate={{ x: "-100%" }}
+        transition={{ duration: 20, ease: "linear", repeat: Infinity }}
+        className="scrollText flex items-center shrink-0 gap-5 "
+      >
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            UX Design
+          </h1>
+        </div>
+
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            UX Design
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            UX Design
+          </h1>
+        </div>
+        <div className="flex items-center justify-between">
+          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
+            animateText
+          </h1>
+        </div>
+      </motion.dev>
+    </div>
+  );
+};
+
+export default OurProjectSection2;
