@@ -120,7 +120,7 @@ const WorkflowSection2 = () => {
               y="575"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/pointer.png"
+              href="Slicing/our workflow/pointer.png"
               className="ball"
             />
 
@@ -129,7 +129,7 @@ const WorkflowSection2 = () => {
               y="170"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/verstehen-icon .png"
+              href="Slicing/our workflow/verstehen-icon .png"
               className="img img-1"
             />
             <image
@@ -137,7 +137,7 @@ const WorkflowSection2 = () => {
               y="280"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/ideenfindung & konzept-icon.png"
+              href="Slicing/our workflow/ideenfindung & konzept-icon.png"
               className="img img-2"
             />
             <image
@@ -145,7 +145,7 @@ const WorkflowSection2 = () => {
               y="0"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/design-icon .png"
+              href="Slicing/our workflow/design-icon .png"
               className="img img-3"
             />
             <image
@@ -153,7 +153,7 @@ const WorkflowSection2 = () => {
               y="20"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/realisation-icon .png"
+              href="Slicing/our workflow/realisation-icon .png"
               className="img img-4"
             />
             <image
@@ -161,7 +161,7 @@ const WorkflowSection2 = () => {
               y="500"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/testing-icon .png"
+              href="Slicing/our workflow/testing-icon .png"
               className="img img-5"
             />
             <image
@@ -169,7 +169,7 @@ const WorkflowSection2 = () => {
               y="700"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/launch-icon.png"
+              href="Slicing/our workflow/launch-icon.png"
               className="img img-5"
             />
             <image
@@ -177,7 +177,7 @@ const WorkflowSection2 = () => {
               y="1000"
               width="40"
               height="40"
-              href="public/Slicing/our workflow/betreuung-icon .png"
+              href="Slicing/our workflow/betreuung-icon .png"
               className="img img-6"
             />
 
