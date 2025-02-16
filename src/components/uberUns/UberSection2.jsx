@@ -18,10 +18,10 @@ const UberSection2 = () => {
         <Button name="Mejr erfahren" img={Arrow} style='bg-black text-white px-4.5 py-2.5 font-light mt-[4vw]' />
         </div>
       </div>
-      <div className="w-[55%] h-full bg-emerald-500">
+      <div className="w-[55%] h-full">
         <img
           className="w-full h-full object-cover object-center"
-          src="public/Slicing/header/about-image.jpg"
+          src="Slicing/header/about-image.jpg"
           alt=""
         />
       </div>

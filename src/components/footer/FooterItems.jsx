@@ -84,7 +84,7 @@ const FooterItems = () => {
             <select
               name=""
               id=""
-              className="appearance-none bg-[url(public/Slicing/footer/arrow.png)] bg-no-repeat bg-[center_right_12px] border border-[#f1f1f156] rounded py-1 px-4 pr-20 object-center outline-none mr-2 "
+              className="appearance-none bg-[url(Slicing/footer/arrow.png)] bg-no-repeat bg-[center_right_12px] border border-[#f1f1f156] rounded py-1 px-4 pr-20 object-center outline-none mr-2 "
             >
               <option value="" className="text-black bg-gray-200">
                 Contact Us
@@ -96,7 +96,7 @@ const FooterItems = () => {
             <select
               name=""
               id=""
-              className="appearance-none bg-[url(public/Slicing/footer/arrow.png)] bg-no-repeat bg-[center_right_8px] border border-[#f1f1f156] rounded py-1 px-4 pr-8 object-center outline-none  "
+              className="appearance-none bg-[url(Slicing/footer/arrow.png)] bg-no-repeat bg-[center_right_8px] border border-[#f1f1f156] rounded py-1 px-4 pr-8 object-center outline-none  "
             >
               <option value="">English</option>
             </select>

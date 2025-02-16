@@ -21,7 +21,7 @@ const WorkflowSection2 = () => {
       {
         ease: "none",
         scrollTrigger: {
-          trigger: containerRef.current,
+          trigger: anatherRef.current,
           start: "top 1%",
           end: "top -400%",
           scrub: 3.5,
@@ -33,10 +33,10 @@ const WorkflowSection2 = () => {
     );
 
     tl.to(
-      anatherRef.current,
+      svgPrent.current,
       {
         // x: -gsap.getProperty(".ball", "x"),
-        transform: "translateX(-70%)",
+        transform: "translateX(-37%)",
         // transform: "translateX(-70%) translateY(-5%)",
       },
       0
@@ -93,26 +93,6 @@ const WorkflowSection2 = () => {
                 fill="none"
               ></path>
             </g>
-
-            {/* <path
-            ref={pathRef}
-            id="thePath"
-            d="M 0 100 q 0 0 1000 0, 
-          "
-            stroke="black"
-            strokeWidth="15"
-            fill="none"
-          /> */}
-
-            {/* <circle ref={ballRef} r="45" cx="50" cy="50" fill="red" />
-            <circle
-              ref={ballRef}
-              className="theCircleShadow opacity-[0.2] "
-              cx="693.1"
-              cy="530.9"
-              r="150"
-              fill="url(#whiteToTransparent)"
-            /> */}
 
             <image
               ref={ballRef}
