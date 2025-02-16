@@ -1,6 +1,6 @@
 const WorkflowSection1 = () => {
   return (
-    <div className="w-full lg:pt-[5vw] lg:px-[10vw] h-[40vh] text-white font-poppins bg-black ">
+    <div className="w-full lg:pt-[5vw] lg:px-[10vw] h-[40vh] text-white font-poppins bg-black relative z-80 ">
       <h4 className="flex items-center ">
         How we start
         <span className="w-[1.3rem] h-[1.7px] inline-block bg-white ml-[.7rem] "></span>

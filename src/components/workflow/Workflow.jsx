@@ -6,7 +6,7 @@ import WorkflowSection3 from "./workflowItems/WorkflowSection3"
 
 const Workflow = () => {
   return (
-    <div className="w-full min-h-[100vh] bg-black text-white pb-[5vw] ">
+    <div className="w-full min-h-[100vh] bg-black text-white pb-[5vw] overflow-hidden ">
        <WorkflowSection1 />
        <WorkflowSection2 />
        <WorkflowSection3 />
