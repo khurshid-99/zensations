@@ -1,9 +1,23 @@
 import { Button } from "../../template";
 import Arrow from "../../../public/Slicing/header/arrow.png";
 import Arrow2 from "../../../public/Slicing/header/arrowBlack.png";
+import { motion } from "motion/react";
+import SideNave from "../sideNave/SideNave";
+import { useState } from "react";
 const Hero = () => {
+
+  const [menuOpen, setMenuOpen] = useState(false)
+
+  const menuHendlear = ()=>{
+    
+  }
+
+
   return (
     <div className="w-full bg-[#f0f0f0] lg:h-[90vh] lg:px-[5vw] relative ">
+      <div className="absolute top-0 right-[5vw] ">
+          <SideNave fnc={menuHendlear} menu={menuOpen} setMenu={setMenuOpen} />
+        </div>
       <section className="section-1 w-full lg:h-1/2 font-poppins lg:px-[5vw] lg:pt-[2.05vw]  ">
         <h1 className="lg:text-[6vw] font-poppins lg:font-light  ">
           We create
@@ -16,7 +30,7 @@ const Hero = () => {
         </h1>
       </section>
 
-      <section className="section-2 lg:flex lg:justify-between lg:items-center lg:h-1/2 ">
+      <section className="section-2 relative lg:flex lg:justify-between lg:items-center lg:h-1/2 ">
         <div className="lg:w-1/2 lg:h-full lg:flex lg:items-end lg:pl-[5vw]">
           <Button
             name="SEE OUR WORK"
@@ -41,6 +55,17 @@ const Hero = () => {
             style="bg-[#fff] lg:px-[2rem] lg:py-3 lg:text-[.9rem] uppercase mt-[2.5rem] font-semibold"
           />
         </div>
+        <motion.img
+          animate={{ rotate: 360 }}
+          transition={{
+            repeat: Infinity,
+            ease: "linear",
+            duration: 5,
+          }}
+          src="Slicing/header/P4.png"
+          alt=""
+          className="absolute right-0 bottom-10 w-[6rem] "
+        />
       </section>
     </div>
   );

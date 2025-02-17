@@ -2,7 +2,7 @@ import { motion } from "motion/react";
 const OurProjectSection2 = () => {
   return (
     <div className=" w-full h-[25vh] flex items-center gap-5 -mt-12   ">
-      <motion.dev
+      <motion.div
         initial={{ x: 0 }}
         animate={{ x: "-100%" }}
         transition={{ duration: 20, ease: "linear", repeat: Infinity }}
@@ -52,8 +52,8 @@ const OurProjectSection2 = () => {
             animateText
           </h1>
         </div>
-      </motion.dev>
-      <motion.dev
+      </motion.div>
+      <motion.div
         initial={{ x: 0 }}
         animate={{ x: "-100%" }}
         transition={{ duration: 20, ease: "linear", repeat: Infinity }}
@@ -103,7 +103,7 @@ const OurProjectSection2 = () => {
             animateText
           </h1>
         </div>
-      </motion.dev>
+      </motion.div>
     </div>
   );
 };

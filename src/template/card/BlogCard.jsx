@@ -1,6 +1,6 @@
-const BlogCard = ({ img, projectName, date, description, name, time }) => {
+const BlogCard = ({ img, projectName, date, description, name, time,  }) => {
   return (
-    <div className="w-[25vw] h-full rounded-3xl overflow-hidden shrink-0">
+    <div  className="w-[25vw] h-full rounded-3xl overflow-hidden shrink-0">
       <div className="w-full h-[30vh] ">
         <img src={img} alt="" className="rounded-b-3xl" />
       </div>

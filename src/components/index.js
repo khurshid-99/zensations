@@ -3,11 +3,23 @@ import Hero from "./hero/Hero";
 import UberUns from "./uberUns/UberUns";
 import OurProjects from "./ourProjecs/OurProjects";
 import UxUiDesign from "./ux&uiDesign/UxUiDesign";
-import Workflow from "./workflow/Workflow"
+import Workflow from "./workflow/Workflow";
 import OurPortfolio from "./ourPortfolio/OurPortfolio";
 import Blog from "./theBlog/Blogs";
 import Consultation from "./consultation/Consultation";
 import Footer from "./footer/Footer";
+import SideNave from "./sideNave/SideNave";
 
-
-export {NaveBar, Hero, UberUns, OurProjects, UxUiDesign, Workflow, OurPortfolio, Blog, Consultation, Footer} 
+export {
+  NaveBar,
+  Hero,
+  UberUns,
+  OurProjects,
+  UxUiDesign,
+  Workflow,
+  OurPortfolio,
+  Blog,
+  Consultation,
+  Footer,
+  SideNave,
+};

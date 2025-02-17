@@ -54,10 +54,9 @@ const BlogCards = () => {
     <div className="w-full h-[45vh]  px-[10vw] font-poppins flex flex-nowrap shrink-0 overflow-x-hidden gap-x-5 ">
       <Swiper grabCursor={true} slidesPerView={3} loop={true}>
         {cardDetiles.map((card, index) => (
-          <>
+          <div key={index}>
             <SwiperSlide>
               <BlogCard
-                key={index}
                 img={card.img}
                 projectName={card.projectName}
                 date={card.date}
@@ -66,7 +65,7 @@ const BlogCards = () => {
                 time={card.time}
               />
             </SwiperSlide>
-          </>
+          </div>
         ))}
       </Swiper>
     </div>

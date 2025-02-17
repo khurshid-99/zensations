@@ -20,8 +20,9 @@ const PortfolioCards = () => {
   return (
     <div className="w-full px-[5vw] py-[5vw] relative  text-white flex flex-wrap justify-center ">
       {cardsDetils.map((card) => (
-        <>
+        <div key={card.projectName}>
           <Cards
+            key={card.projectName}
             img={card.img}
             projectName={card.projectName}
             imgBg={`${
@@ -32,7 +33,7 @@ const PortfolioCards = () => {
             name={card.name}
             styles="bg-white text-black font-semibold px-4 py-2 text-[1.1rem]"
           />
-        </>
+        </div>
       ))}
     </div>
   );

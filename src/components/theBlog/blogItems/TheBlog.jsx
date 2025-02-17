@@ -29,14 +29,13 @@ const TheBlog = () => {
       </section>
       <section className="w-[45vw]  ">
         <div className="w-full h-full flex flex-wrap items-center gap-2 mb-[2vw] ">
-          {buttons.map((button) => (
-            <>
+          {buttons.map((button, index) => (
+            <div key={index}>
               <Button
-                key={button}
                 name={button}
                 style="px-4 py-1 border border-primary rounded-[50px] text-nowrap "
               />
-            </>
+            </div>
           ))}
         </div>
         <Button
