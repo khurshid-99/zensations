@@ -66,8 +66,7 @@ const WorkflowSection3 = () => {
                   ref={yearsRef}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
-                  
-                  className="my-3 w-[3.5rem]  lg:text-[3.5vw] lg:font-bold inline-block"
+                  className="my-3 w-[5rem] lg:text-[3.5vw] lg:font-bold inline-block"
                 >
                   {roundedYears}
                 </motion.h1>{" "}
@@ -92,7 +91,7 @@ const WorkflowSection3 = () => {
                   ref={happyRef}
                   initial={{ opacity: 0 }}
                   whileInView={{ opacity: 1 }}
-                  className="my-3 w-[5.7rem]  lg:text-[3.5vw] lg:font-bold inline-block"
+                  className="my-3 w-[8rem] lg:text-[3.5vw] lg:font-bold inline-block"
                 >
                   {roundedHappy}
                 </motion.h1>
