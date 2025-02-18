@@ -2,8 +2,7 @@ import gsap, { CustomEase } from "gsap/all";
 import { useRef, useState } from "react";
 import { NavLink } from "react-router-dom";
 
-
-gsap.registerPlugin(CustomEase)
+gsap.registerPlugin(CustomEase);
 const NaveRight = () => {
   const sideNaveRef = useRef("");
 
