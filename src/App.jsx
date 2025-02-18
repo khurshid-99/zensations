@@ -18,7 +18,7 @@ const App = () => {
   return (
     <div
       ref={locomotive}
-      className="w-full min-h-screen bg-[#fff] relative font-poppins"
+      className="w-full min-h-screen bg-[#fff] relative font-poppins overflow-x-hidden"
     >
       <NaveBar />
       <Hero />

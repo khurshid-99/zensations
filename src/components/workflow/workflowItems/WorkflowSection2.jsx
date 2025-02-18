@@ -1,5 +1,4 @@
 import gsap from "gsap";
-// import DrawSVGPlugin from "gsap/DrawSVGPlugin";
 import GSDevTools from "gsap/all";
 import MotionPathPlugin from "gsap/MotionPathPlugin";
 import DrawSVGPlugin from "gsap/all";
@@ -17,27 +16,38 @@ const WorkflowSection2 = () => {
   const anatherRef = useRef();
 
   useGSAP(() => {
-    const tl = gsap.timeline(
-      {
-        ease: "none",
-        scrollTrigger: {
-          trigger: anatherRef.current,
-          start: "top 1%",
-          end: "top -400%",
-          scrub: 3.5,
-          pin: true,
-          // markers: true,
+    const visabal = gsap
+      .timeline({
+        defaults: {
+          fill: "white",
+          autoAlpha: 1,
+          ease: "elastic(2.5, 1)",
         },
-      }
-      // 0
-    );
+      })
+      .to(".Text-1", {}, 0.01)
+      .to(".Text-2", {}, 0.06)
+      .to(".Text-3", {}, 0.1)
+      .to(".Text-4", {}, 0.17)
+      .to(".Text-5", {}, 0.28)
+      .to(".Text-6", {}, 0.43)
+      .to(".Text-7", {}, 0.6);
+
+    const tl = gsap.timeline({
+      ease: "none",
+      scrollTrigger: {
+        trigger: anatherRef.current,
+        start: "top 1%",
+        end: "top -400%",
+        scrub: 3.5,
+        pin: true,
+        // markers: true,
+      },
+    });
 
     tl.to(
       svgPrent.current,
       {
-        // x: -gsap.getProperty(".ball", "x"),
         transform: "translateX(-37%)",
-        // transform: "translateX(-70%) translateY(-5%)",
       },
       0
     );
@@ -51,10 +61,10 @@ const WorkflowSection2 = () => {
           autoRotate: true,
           start: 0,
         },
-        duration: 0.99, // Slower movement
+        duration: 0.99,
       },
       0
-    );
+    ).add(visabal, 0);
   });
 
   return (
@@ -104,310 +114,383 @@ const WorkflowSection2 = () => {
               className="ball"
             />
 
-            <image
-              x="250"
-              y="170"
-              width="40"
-              height="40"
-              href="Slicing/our workflow/verstehen-icon .png"
-              className="img img-1"
-            />
-            <image
-              x="600"
-              y="280"
-              width="40"
-              height="40"
-              href="Slicing/our workflow/ideenfindung & konzept-icon.png"
-              className="img img-2"
-            />
-            <image
-              x="1000"
-              y="0"
-              width="40"
-              height="40"
-              href="Slicing/our workflow/design-icon .png"
-              className="img img-3"
-            />
-            <image
-              x="1400"
-              y="20"
-              width="40"
-              height="40"
-              href="Slicing/our workflow/realisation-icon .png"
-              className="img img-4"
-            />
-            <image
-              x="1400"
-              y="500"
-              width="40"
-              height="40"
-              href="Slicing/our workflow/testing-icon .png"
-              className="img img-5"
-            />
-            <image
-              x="1000"
-              y="700"
-              width="40"
-              height="40"
-              href="Slicing/our workflow/launch-icon.png"
-              className="img img-5"
-            />
-            <image
-              x="600"
-              y="1000"
-              width="40"
-              height="40"
-              href="Slicing/our workflow/betreuung-icon .png"
-              className="img img-6"
-            />
+            {/* grop-1 */}
+            <g>
+              <image
+                x="250"
+                y="170"
+                width="40"
+                height="40"
+                href="Slicing/our workflow/verstehen-icon .png"
+                className="img img-1"
+              />
+              <text
+                x="250"
+                y="240"
+                fill="gray"
+                className="Text-1 text-[1.5rem]  "
+              >
+                Verstehen
+              </text>
+              <text
+                x="250"
+                y="280"
+                fill="gray"
+                className="Text-1 w-[10vw] bg-green-50 "
+              >
+                Lorem Ipsum is simply dummy
+              </text>
+              <text
+                x="250"
+                y="300"
+                fill="gray"
+                className="Text-1 w-[10vw] bg-green-50 "
+              >
+                text of the printing and typesetting
+              </text>
+              <text
+                x="250"
+                y="320"
+                fill="gray"
+                className="Text-1 w-[10vw] bg-green-50 "
+              >
+                industry. Lorem Ipsum has been
+              </text>
+              <text
+                x="250"
+                y="340"
+                fill="gray"
+                className="Text-1 w-[10vw] bg-green-50 "
+              >
+                the insustrys standard
+              </text>
+            </g>
 
-            {/* ------------------ */}
+            {/* grop-2 */}
+            <g>
+              <image
+                x="800"
+                y="300"
+                width="40"
+                height="40"
+                href="Slicing/our workflow/ideenfindung & konzept-icon.png"
+                className="img img-2"
+              />
+              <text
+                x="800"
+                y="370"
+                fill="gray"
+                className="Text-2 text-[1.5rem] "
+              >
+                Ideenfindung & Konzept
+              </text>
+              <text
+                x="800"
+                y="410"
+                fill="gray"
+                className="Text-2 w-[10vw] bg-green-50 "
+              >
+                Lorem Ipsum is simply dummy
+              </text>
+              <text
+                x="800"
+                y="430"
+                fill="gray"
+                className="Text-2 w-[10vw] bg-green-50 "
+              >
+                text of the printing and typesetting
+              </text>
+              <text
+                x="800"
+                y="450"
+                fill="gray"
+                className="Text-2 w-[10vw] bg-green-50 "
+              >
+                industry. Lorem Ipsum has been
+              </text>
+              <text
+                x="800"
+                y="470"
+                fill="gray"
+                className="Text-2 w-[10vw] bg-green-50 "
+              >
+                the insustrys standard
+              </text>
+            </g>
 
-            <text x="250" y="240" fill="gray" className="text-[1.5rem] ">
-              Verstehen
-            </text>
-            <text x="600" y="350" fill="gray" className="text-[1.5rem] ">
-              Verstehen
-            </text>
-            <text
-              x="1000"
-              y="70"
-              fill="gray"
-              className="text-[1.5rem] invisible "
-            >
-              Verstehen
-            </text>
-            <text
-              x="1400"
-              y="90"
-              fill="gray"
-              className="text-[1.5rem] invisible "
-            >
-              Verstehen
-            </text>
-            <text
-              x="1400"
-              y="570"
-              fill="gray"
-              className="text-[1.5rem] invisible "
-            >
-              Verstehen
-            </text>
-            <text
-              x="1000"
-              y="770"
-              fill="gray"
-              className="text-[1.5rem] invisible "
-            >
-              Verstehen
-            </text>
-            <text
-              x="600"
-              y="1070"
-              fill="gray"
-              className="text-[1.5rem] invisible "
-            >
-              Verstehen
-            </text>
+            {/* grop-3 */}
 
-            {/* ------------ */}
+            <g>
+              <image
+                x="1400"
+                y="400"
+                width="40"
+                height="40"
+                href="Slicing/our workflow/design-icon .png"
+                className="img img-3"
+              />
 
-            <text x="250" y="280" fill="gray" className="w-[10vw] bg-green-50 ">
-              Lorem Ipsum is simply dummy
-            </text>
-            <text x="250" y="300" fill="gray" className="w-[10vw] bg-green-50 ">
-              text of the printing and typesetting
-            </text>
-            <text x="250" y="320" fill="gray" className="w-[10vw] bg-green-50 ">
-              industry. Lorem Ipsum has been
-            </text>
-            <text x="250" y="340" fill="gray" className="w-[10vw] bg-green-50 ">
-              the insustrys standard
-            </text>
-            {/* ------------ */}
+              <text
+                x="1400"
+                y="470"
+                fill="gray"
+                className="Text-3 text-[1.5rem]  "
+              >
+                Design
+              </text>
 
-            <text x="600" y="390" fill="gray" className="w-[10vw] bg-green-50 ">
-              Lorem Ipsum is simply dummy
-            </text>
-            <text x="600" y="410" fill="gray" className="w-[10vw] bg-green-50 ">
-              text of the printing and typesetting
-            </text>
-            <text x="600" y="430" fill="gray" className="w-[10vw] bg-green-50 ">
-              industry. Lorem Ipsum has been
-            </text>
-            <text x="600" y="450" fill="gray" className="w-[10vw] bg-green-50 ">
-              the insustrys standard
-            </text>
-            {/* ------------ */}
+              <text
+                x="1400"
+                y="510"
+                fill="gray"
+                className="Text-3 w-[10vw] bg-green-50 "
+              >
+                Lorem Ipsum is simply dummy
+              </text>
+              <text
+                x="1400"
+                y="530"
+                fill="gray"
+                className="Text-3 w-[10vw] bg-green-50 "
+              >
+                text of the printing and typesetting
+              </text>
+              <text
+                x="1400"
+                y="550"
+                fill="gray"
+                className="Text-3 w-[10vw] bg-green-50 "
+              >
+                industry. Lorem Ipsum has been
+              </text>
+              <text
+                x="1400"
+                y="570"
+                fill="gray"
+                className="Text-3 w-[10vw] bg-green-50 "
+              >
+                the insustrys standard
+              </text>
+            </g>
 
-            <text
-              x="1000"
-              y="110"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              Lorem Ipsum is simply dummy
-            </text>
-            <text
-              x="1000"
-              y="130"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              text of the printing and typesetting
-            </text>
-            <text
-              x="1000"
-              y="150"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              industry. Lorem Ipsum has been
-            </text>
-            <text
-              x="1000"
-              y="170"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              the insustrys standard
-            </text>
-            {/* ------------ */}
+            {/* grop-4 */}
 
-            <text
-              x="1400"
-              y="130"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              Lorem Ipsum is simply dummy
-            </text>
-            <text
-              x="1400"
-              y="150"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              text of the printing and typesetting
-            </text>
-            <text
-              x="1400"
-              y="170"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              industry. Lorem Ipsum has been
-            </text>
-            <text
-              x="1400"
-              y="190"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              the insustrys standard
-            </text>
-            {/* ------------ */}
+            <g>
+              <image
+                x="1900"
+                y="20"
+                width="40"
+                height="40"
+                href="Slicing/our workflow/realisation-icon .png"
+                className="img img-4"
+              />
 
-            <text
-              x="1400"
-              y="600"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              Lorem Ipsum is simply dummy
-            </text>
-            <text
-              x="1400"
-              y="620"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              text of the printing and typesetting
-            </text>
-            <text
-              x="1400"
-              y="640"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              industry. Lorem Ipsum has been
-            </text>
-            <text
-              x="1400"
-              y="660"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              the insustrys standard
-            </text>
-            {/* ------------ */}
+              <text
+                x="1900"
+                y="90"
+                fill="gray"
+                className="Text-4 text-[1.5rem]  "
+              >
+                Realisation
+              </text>
 
-            <text
-              x="1000"
-              y="810"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              Lorem Ipsum is simply dummy
-            </text>
-            <text
-              x="1000"
-              y="830"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              text of the printing and typesetting
-            </text>
-            <text
-              x="1000"
-              y="850"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              industry. Lorem Ipsum has been
-            </text>
-            <text
-              x="1000"
-              y="870"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              the insustrys standard
-            </text>
-            {/* ------------ */}
+              <text
+                x="1900"
+                y="130"
+                fill="gray"
+                className="Text-4 w-[10vw] bg-green-50 "
+              >
+                Lorem Ipsum is simply dummy
+              </text>
+              <text
+                x="1900"
+                y="150"
+                fill="gray"
+                className="Text-4 w-[10vw] bg-green-50 "
+              >
+                text of the printing and typesetting
+              </text>
+              <text
+                x="1900"
+                y="170"
+                fill="gray"
+                className="Text-4 w-[10vw] bg-green-50 "
+              >
+                industry. Lorem Ipsum has been
+              </text>
+              <text
+                x="1900"
+                y="190"
+                fill="gray"
+                className="Text-4 w-[10vw] bg-green-50 "
+              >
+                the insustrys standard
+              </text>
+            </g>
 
-            <text
-              x="600"
-              y="1110"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              Lorem Ipsum is simply dummy
-            </text>
-            <text
-              x="600"
-              y="1130"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              text of the printing and typesetting
-            </text>
-            <text
-              x="600"
-              y="1150"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              industry. Lorem Ipsum has been
-            </text>
-            <text
-              x="600"
-              y="1170"
-              fill="gray"
-              className="w-[10vw] bg-green-50 "
-            >
-              the insustrys standard
-            </text>
+            {/* grop-5 */}
+
+            <g>
+              <image
+                x="2600"
+                y="300"
+                width="40"
+                height="40"
+                href="Slicing/our workflow/testing-icon .png"
+                className="img img-5"
+              />
+
+              <text
+                x="2600"
+                y="370"
+                fill="gray"
+                className="Text-5 text-[1.5rem]  "
+              >
+                Testing
+              </text>
+
+              <text
+                x="2600"
+                y="400"
+                fill="gray"
+                className="Text-5 w-[10vw] bg-green-50 "
+              >
+                Lorem Ipsum is simply dummy
+              </text>
+              <text
+                x="2600"
+                y="420"
+                fill="gray"
+                className="Text-5 w-[10vw] bg-green-50 "
+              >
+                text of the printing and typesetting
+              </text>
+              <text
+                x="2600"
+                y="440"
+                fill="gray"
+                className="Text-5 w-[10vw] bg-green-50 "
+              >
+                industry. Lorem Ipsum has been
+              </text>
+              <text
+                x="2600"
+                y="460"
+                fill="gray"
+                className="Text-5 w-[10vw] bg-green-50 "
+              >
+                the insustrys standard
+              </text>
+            </g>
+
+            {/* grop-6 */}
+
+            <g>
+              <image
+                x="2800"
+                y="700"
+                width="40"
+                height="40"
+                href="Slicing/our workflow/launch-icon.png"
+                className="img img-6"
+              />
+              <text
+                x="2800"
+                y="770"
+                fill="gray"
+                className="Text-6 text-[1.5rem]  "
+              >
+                Launch
+              </text>
+
+              <text
+                x="2800"
+                y="810"
+                fill="gray"
+                className="Text-6 w-[10vw] bg-green-50 "
+              >
+                Lorem Ipsum is simply dummy
+              </text>
+              <text
+                x="2800"
+                y="830"
+                fill="gray"
+                className="Text-6 w-[10vw] bg-green-50 "
+              >
+                text of the printing and typesetting
+              </text>
+              <text
+                x="2800"
+                y="850"
+                fill="gray"
+                className="Text-6 w-[10vw] bg-green-50 "
+              >
+                industry. Lorem Ipsum has been
+              </text>
+              <text
+                x="2800"
+                y="870"
+                fill="gray"
+                className="Text-6 w-[10vw] bg-green-50 "
+              >
+                the insustrys standard
+              </text>
+            </g>
+
+            {/* grop-7 */}
+
+            <g>
+              <image
+                x="2200"
+                y="1000"
+                width="40"
+                height="40"
+                href="Slicing/our workflow/betreuung-icon .png"
+                className="img img-7"
+              />
+
+              <text
+                x="2200"
+                y="1070"
+                fill="gray"
+                className="Text-7 text-[1.5rem]  "
+              >
+                Betreuung
+              </text>
+
+              <text
+                x="2200"
+                y="1110"
+                fill="gray"
+                className="Text-7 w-[10vw] bg-green-50 "
+              >
+                Lorem Ipsum is simply dummy
+              </text>
+              <text
+                x="2200"
+                y="1130"
+                fill="gray"
+                className="Text-7 w-[10vw] bg-green-50 "
+              >
+                text of the printing and typesetting
+              </text>
+              <text
+                x="2200"
+                y="1150"
+                fill="gray"
+                className="Text-7 w-[10vw] bg-green-50 "
+              >
+                industry. Lorem Ipsum has been
+              </text>
+              <text
+                x="2200"
+                y="1170"
+                fill="gray"
+                className="Text-7 w-[10vw] bg-green-50 "
+              >
+                the insustrys standard
+              </text>
+            </g>
           </svg>
         </div>
       </div>

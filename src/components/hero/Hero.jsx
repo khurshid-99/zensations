@@ -2,22 +2,10 @@ import { Button } from "../../template";
 import Arrow from "../../../public/Slicing/header/arrow.png";
 import Arrow2 from "../../../public/Slicing/header/arrowBlack.png";
 import { motion } from "motion/react";
-import SideNave from "../sideNave/SideNave";
-import { useState } from "react";
 const Hero = () => {
-
-  const [menuOpen, setMenuOpen] = useState(false)
-
-  const menuHendlear = ()=>{
-    
-  }
-
-
   return (
     <div className="w-full bg-[#f0f0f0] lg:h-[90vh] lg:px-[5vw] relative ">
-      <div className="absolute top-0 right-[5vw] ">
-          <SideNave fnc={menuHendlear} menu={menuOpen} setMenu={setMenuOpen} />
-        </div>
+      <div className="absolute top-0 right-[5vw] "></div>
       <section className="section-1 w-full lg:h-1/2 font-poppins lg:px-[5vw] lg:pt-[2.05vw]  ">
         <h1 className="lg:text-[6vw] font-poppins lg:font-light  ">
           We create
@@ -39,7 +27,7 @@ const Hero = () => {
             style="bg-black text-white py-5 px-[3.5rem]"
           />
         </div>
-        <div className="lg:h-full lg:w-1/2 font-poppins ">
+        <div className="lg:h-full lg:w-1/2 font-poppins lg:pl-[3.5vw] ">
           <p className="lg:w-1/2 lg:text-[1.3rem] lg:mt-[3vw] ">
             Elevating communication, marketing, <br />{" "}
             <span className="font-semibold ">UX design</span> into powerful{" "}

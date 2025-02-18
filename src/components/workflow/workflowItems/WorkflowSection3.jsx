@@ -38,7 +38,7 @@ const WorkflowSection3 = () => {
           }
         });
       },
-      { threshold: 0.9 } // Trigger when 50% of the element is visible
+      { threshold: 0.9 } // Trigger when 90% of the element is visible
     );
 
     observer.observe(yearsRef.current);
@@ -123,17 +123,29 @@ const WorkflowSection3 = () => {
           </div>
           <div className="relative w-full flex items-center">
             <img src="Slicing/our workflow/text-dot copy.png" alt="" />
-            <img
+            <motion.img
+              initial={{ x: -100, opacity: 0 }}
+              transition={{ duration: 1, ease: "linear" }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
               src="Slicing/our workflow/pointer-3 .png"
               alt=""
               className="absolute"
             />
-            <img
+            <motion.img
+              initial={{ x: -500, opacity: 0 }}
+              transition={{ duration: 1, ease: "linear" }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
               src="Slicing/our workflow/pointer-3 .png"
               alt=""
               className="absolute left-[40%]"
             />
-            <img
+            <motion.img
+              initial={{ x: -300, opacity: 0 }}
+              transition={{ duration: 1, ease: "linear" }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
               src="Slicing/our workflow/pointer-3 .png"
               alt=""
               className="absolute left-[80%]"

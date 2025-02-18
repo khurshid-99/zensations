@@ -9,45 +9,48 @@ const OurProjectSection2 = () => {
         className="scrollText flex items-center shrink-0 gap-5"
       >
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             UX Design
           </h1>
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             UX Design
           </h1>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>
         </div>
-        <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+        <div className="flex items-center justify-between ">
+          <div
+            className="w-[1.5rem] h-[1.5rem]
+            bg-gray-400/80 mr-4 rounded-full shrink-0 "
+          ></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             UX Design
           </h1>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>
@@ -60,45 +63,45 @@ const OurProjectSection2 = () => {
         className="scrollText flex items-center shrink-0 gap-5 "
       >
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             UX Design
           </h1>
         </div>
 
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             UX Design
           </h1>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             UX Design
           </h1>
         </div>
         <div className="flex items-center justify-between">
-          <div className="w-[1.5rem] h-[1.5rem] bg-gray-400/80 rounded-full shrink-0 "></div>
+          <div className="w-[1.5rem] h-[1.5rem] mr-4 bg-gray-400/80 rounded-full shrink-0 "></div>
           <h1 className="animateText lg:text-[7vw] leading-none lg:font-extrabold -mt-10 shrink-0 ">
             animateText
           </h1>

@@ -8,7 +8,6 @@ import OurPortfolio from "./ourPortfolio/OurPortfolio";
 import Blog from "./theBlog/Blogs";
 import Consultation from "./consultation/Consultation";
 import Footer from "./footer/Footer";
-import SideNave from "./sideNave/SideNave";
 
 export {
   NaveBar,
@@ -21,5 +20,5 @@ export {
   Blog,
   Consultation,
   Footer,
-  SideNave,
+ 
 };
