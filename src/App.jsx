@@ -11,9 +11,24 @@ import {
   UxUiDesign,
   Workflow,
 } from "./components";
+import { useEffect } from "react";
 
 const App = () => {
   const locomotive = new LocomotiveScroll();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+    // Ensure the page scrolls to top on reload
+    const handleReload = () => {
+      window.scrollTo(0, 0);
+    };
+
+    window.addEventListener("beforeunload", handleReload);
+
+    return () => {
+      window.removeEventListener("beforeunload", handleReload);
+    };
+  }, []);
 
   return (
     <div

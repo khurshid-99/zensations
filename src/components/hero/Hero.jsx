@@ -11,7 +11,10 @@ const Hero = () => {
           We create
         </h1>
         <h1 className="lg:text-[6vw] font-bold lg:leading-[5rem]">
-          <span className="text-[#3b59ff] ">Digital</span> Experiences
+          <span className="bg_text_animition  ">
+            Digital
+          </span>{" "}
+          Experiences
         </h1>
         <h1 className="lg:text-[5.7vw] lg:pl-[28.5vw] lg:font-bold lg:mt-4 ">
           That work
