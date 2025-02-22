@@ -18,7 +18,7 @@ const App = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    // Ensure the page scrolls to top on reload
+   
     const handleReload = () => {
       window.scrollTo(0, 0);
     };

@@ -1,8 +1,8 @@
 import { Button } from "../../../template";
 
-const UxSection1 = () => {
+const ElementLeft = () => {
   return (
-    <div className="lg:w-1/2 lg:min-h-[100vh] border-1 border-primary font-poppins ">
+    <div className="leftElement lg:w-1/2 lg:min-h-[100vh] border-1 border-primary font-poppins  ">
       <section className="UxUi w-full h-[80vh]  lg:py-[10vw] lg:pl-[5vw] ">
         <div className=" w-[20vw]">
           <h3 className="text-secondary border-2 border-black w-fit rounded-[7px] px-1 py-1 font-bold">
@@ -54,4 +54,4 @@ const UxSection1 = () => {
   );
 };
 
-export default UxSection1;
+export default ElementLeft;

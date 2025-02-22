@@ -15,7 +15,7 @@ const UberSection2 = () => {
           strategischem Brand Management <br /> sowie diverse Workshops und
           Trainings <br /> fur lhren Kommunikations
         </p>
-        <Button name="Mejr erfahren" img={Arrow} style='bg-black text-white px-4.5 py-2.5 font-light mt-[4vw]' />
+        <Button name="Mejr erfahren" img={Arrow} style='bg-black text-white px-4.5 py-2.5 font-light mt-[4vw] uppercase ' />
         </div>
       </div>
       <div className="w-[55%] h-full">

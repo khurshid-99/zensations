@@ -1,14 +1,34 @@
-import MarketingSection2 from "./uxDesignItems/MarketingSection2"
-import UxSection1 from "./uxDesignItems/UxSection1"
-
+import { useGSAP } from "@gsap/react";
+import { useRef } from "react";
+import ElementLeft from "./uxDesignItems/ElementLeft";
+import ElementRight from "./uxDesignItems/ElementRight";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 const UxUiDesign = () => {
-  return (
-    <div className="w-full min-h-screen lg:pl-[10vw] lg:pt-[5vw] lg:pb-[8vw] font-poppins flex relative  ">
-        <UxSection1 />
-        <MarketingSection2 />
-    </div>
-  )
-}
+  const merketingRef = useRef(null);
+  const rightRef = useRef(null);
 
-export default UxUiDesign
+  useGSAP(() => {
+    ScrollTrigger.create({
+      trigger: merketingRef.current,
+      start: "top top",
+      end: "bottom bottom",
+      pin: rightRef.current,
+      // markers: true,
+    });
+  });
+
+  return (
+    <div
+      ref={merketingRef}
+      className="w-full min-h-screen lg:pl-[10vw] lg:pt-[5vw] lg:pb-[8vw] font-poppins flex relative  "
+    >
+      <ElementLeft />
+      <div ref={rightRef} className="absolute">
+        <ElementRight />
+      </div>
+    </div>
+  );
+};
+
+export default UxUiDesign;

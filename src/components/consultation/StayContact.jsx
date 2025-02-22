@@ -1,3 +1,6 @@
+import { Button } from "../../template";
+import ArrowImg from "../../../public/Slicing/contact us/arrow .png";
+
 const StayContact = () => {
   return (
     <div className="w-full h-[50vh] flex font-poppins ">
@@ -25,18 +28,20 @@ const StayContact = () => {
           <h6 className="my-8 tracking-[2px] uppercase text-[15px] ">
             stay in toch
           </h6>
-          <div className="w-full flex items-center ">
+          <form className="w-full flex items-center ">
             <input
+              required
               type="email"
               placeholder="Enter your email address"
               className="bg-transparent border-b-2 w-[20vw] py-2 outline-none "
             />
-            <img
-              src="Slicing/contact us/arrow .png"
+            <Button
+              name=""
+              img={ArrowImg}
+              imgS="w-[4rem] h-[4rem] bg-secondary rounded-full py-5 px-5 ml-2"
               alt=""
-              className="w-[4rem] h-[4rem] bg-secondary rounded-full py-5 px-5 ml-2 "
             />
-          </div>
+          </form>
         </div>
       </section>
     </div>

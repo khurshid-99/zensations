@@ -2,21 +2,84 @@ import { Button } from "../../template";
 import Arrow from "../../../public/Slicing/header/arrow.png";
 import Arrow2 from "../../../public/Slicing/header/arrowBlack.png";
 import { motion } from "motion/react";
+import { useGSAP } from "@gsap/react";
+import gsap from "gsap";
+import { useRef } from "react";
 const Hero = () => {
+  const text1Ref = useRef(null);
+  const textCover1Ref = useRef(null);
+  const text2Ref = useRef(null);
+  const textCover2Ref = useRef(null);
+
+  useGSAP(() => {
+    let tl = gsap.timeline({ repeat: -1 });
+
+    tl.to(textCover1Ref.current, {
+      x: 600,
+      duration: 3,
+      ease: "linear",
+    }).to(text1Ref.current, {
+      opacity: 0,
+      display: "none",
+      duration: 2,
+      delay: 1,
+    });
+    tl.to(textCover2Ref.current, {
+      x: 600,
+      duration: 3,
+      ease: "linear",
+    }).to(text2Ref.current, {
+      opacity: 0,
+      display: "none",
+      duration: 2,
+      delay: 1,
+    });
+  });
+
   return (
-    <div className="w-full bg-[#f0f0f0] lg:h-[90vh] lg:px-[5vw] relative ">
+    <div className="w-full bg-[#F4F4F4] lg:h-[90vh] lg:px-[5vw] relative ">
       <div className="absolute top-0 right-[5vw] "></div>
       <section className="section-1 w-full lg:h-1/2 font-poppins lg:px-[5vw] lg:pt-[2.05vw]  ">
-        <h1 className="lg:text-[6vw] font-poppins lg:font-light  ">
+        <h1 className="lg:text-[6vw] font-poppins lg:font-light relative z-9   ">
           We create
         </h1>
-        <h1 className="lg:text-[6vw] font-bold lg:leading-[5rem]">
-          <span className="bg_text_animition  ">
-            Digital
-          </span>{" "}
-          Experiences
-        </h1>
-        <h1 className="lg:text-[5.7vw] lg:pl-[28.5vw] lg:font-bold lg:mt-4 ">
+
+        <div className="w-full h-[9rem] flex items-center lg:text-[6vw] -mt-7 font-bold lg:leading-[9rem]">
+          <div className=" w-[24.4rem] h-full overflow-hidden relative z-99 ">
+            {/* ------ */}
+            <div className="w-full h-full relative">
+              <div
+                ref={textCover1Ref}
+                className="w-full h-full bg-[#F4F4F4] z-81 absolute top-0 left-0 "
+              ></div>
+              <h1
+                ref={text1Ref}
+                className="bg_text_animition z-80 top-0 left-0 absolute "
+              >
+                Digital
+              </h1>
+            </div>
+            {/* ------- */}
+            <div>
+              <h1
+                ref={text2Ref}
+                className="bg_text_animition z-78 top-0 left-0 absolute  "
+              >
+                UX&UI
+              </h1>
+              <div
+                ref={textCover2Ref}
+                className="w-full h-full bg-[#F4F4F4] z-79 absolute top-0 left-0 "
+              ></div>
+            </div>
+            {/* ------- */}
+          </div>
+          <div>
+            <h1>Experiences</h1>
+          </div>
+        </div>
+
+        <h1 className="lg:text-[5.7vw] lg:pl-[28.5vw] lg:font-bold ">
           That work
         </h1>
       </section>
@@ -30,13 +93,22 @@ const Hero = () => {
             style="bg-black text-white py-5 px-[3.5rem]"
           />
         </div>
-        <div className="lg:h-full lg:w-1/2 font-poppins lg:pl-[3.5vw] ">
-          <p className="lg:w-1/2 lg:text-[1.3rem] lg:mt-[3vw] ">
-            Elevating communication, marketing, <br />{" "}
-            <span className="font-semibold ">UX design</span> into powerful{" "}
-            <span className="font-semibold ">digital expriences</span> targeted
-            campaigns,
-            <span className="font-semibold ">brand identities</span> that <br />{" "}
+        <div className="lg:h-full lg:w-1/2 font-poppins lg:pl-[3.5vw]  ">
+          <p
+            className="lg:w-full lg:text-[1.3rem] lg:mt-[3vw]  
+           "
+          >
+            Elevating communication, marketing, <br />
+            <span className="font-semibold inline-block ">UX design</span> into
+            powerful
+            <span className="font-semibold inline-block ml-2 ">
+              digital expriences
+            </span>
+            <br /> targeted campaigns,
+            <span className="font-semibold inline-block ">
+              brand identities
+            </span>
+            that <br />
             drive results and transfrom businesses
           </p>
           <Button
