@@ -95,7 +95,7 @@ const WorkflowSection2 = () => {
         end: "top -230%",
         scrub: 2,
         // pin: true,
-        markers: true,
+        // markers: true,
       },
     });
 
