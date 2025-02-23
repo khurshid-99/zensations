@@ -38,7 +38,7 @@ const NaveRight = () => {
   };
 
   return (
-    <div className="lg:flex lg:items-center lg:gap-5 justify-between relative ">
+    <div className="flex lg:items-center lg:gap-5 justify-between relative ">
       <div
         ref={sideNaveRef}
         className="sideNave w-0 h-0  font-medium bg-zinc-800/20 rounded-br-4xl rounded-tl-4xl bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-40 p-7 absolute top-10 right-0 z-50 hidden overflow-hidden "
@@ -115,7 +115,7 @@ const NaveRight = () => {
           </NavLink>
         </ul>
       </div>
-      <div className="mr-5">
+      <div className="mr-5 hidden lg:inline-block ">
         <NavLink
           to={"/contact"}
           className={({ isActive }) => (isActive ? "text-secondary" : "")}
@@ -123,7 +123,7 @@ const NaveRight = () => {
           Contact Us
         </NavLink>
       </div>
-      <div className="flex items-center mr-5 ">
+      <div className="hidden lg:visible lg:flex items-center mr-5 ">
         <div className="pl-2">
           <img src="Slicing/header/flag.jpg" alt="" />
         </div>
@@ -143,7 +143,7 @@ const NaveRight = () => {
           onClick={handleClick}
           src="Slicing/header/menu bar-image.png"
           alt=""
-          className="relative"
+          className="relative  lg:w-full "
         />
       </div>
     </div>

@@ -2,7 +2,7 @@ import { NavLink } from "react-router-dom";
 
 const NaveMiddel = () => {
   return (
-    <div className=" items-center lg:flex lg:gap-7 font-poppins text-[.9rem] font-medium ">
+    <div className="hidden lg:visible lg:items-center lg:flex lg:gap-7 font-poppins text-[.9rem] font-medium ">
       <NavLink
         to="/"
         className={({ isActive }) =>

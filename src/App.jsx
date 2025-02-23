@@ -41,10 +41,10 @@ const App = () => {
       <OurProjects />
       <UxUiDesign />
       <Workflow />
-      <OurPortfolio />
-      <Blog />
-      <Consultation />
-      <Footer />
+      {/* <OurPortfolio /> */}
+      {/* <Blog /> */}
+      {/* <Consultation /> */}
+      {/* <Footer /> */}
     </div>
   );
 };

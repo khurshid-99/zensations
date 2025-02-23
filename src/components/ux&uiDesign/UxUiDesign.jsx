@@ -24,7 +24,7 @@ const UxUiDesign = () => {
       className="w-full min-h-screen lg:pl-[10vw] lg:pt-[5vw] lg:pb-[8vw] font-poppins flex relative  "
     >
       <ElementLeft />
-      <div ref={rightRef} className="absolute">
+      <div ref={rightRef} className="absolute hidden lg:inline-block ">
         <ElementRight />
       </div>
     </div>
