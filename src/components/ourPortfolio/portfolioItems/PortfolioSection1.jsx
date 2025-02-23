@@ -1,6 +1,6 @@
 const PortfolioSection1 = () => {
   return (
-    <div className="w-full  px-[5vw] pt-[5vw] flex flex-row lg:flex-col items-center justify-between bg-[red] ">
+    <div className="w-full  px-[5vw] pt-[5vw] flex flex-row lg:flex-col items-center justify-between ">
       <section className="w-full ">
         <h4 className="flex items-center">
           Our Portfolio{" "}
@@ -9,9 +9,12 @@ const PortfolioSection1 = () => {
         <h1 className="text-3xl lg:text-[5vw] leading-0 mt-5 lg:mt-[4vw] lg:mb-[1vw] ">
           Our Work
         </h1>
-        <div className="w-full flex items-center justify-between pr-[5vw] ">
-          <h1 className="text-3xl lg:text-[5vw] font-medium lg:font-bold ">Speaks for Itself</h1>
-          <h4>
+
+        <div className="w-full flex flex-col lg:flex-row lg:items-center lg:justify-between lg:pr-[5vw] ">
+          <h1 className="text-3xl my-5 lg:text-[5vw] font-medium lg:font-bold ">
+            Speaks for Itself
+          </h1>
+          <h4 className="mb-4">
             Vom ersten Beratungsgesprach bis zur finalen <br /> Auslieferung und
             daruber hinaus sind wir hier, <br />
             um Sie zu unterstutzen,

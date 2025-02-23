@@ -1,6 +1,6 @@
 const Img = () => {
   return (
-    <div className="w-1/3 ">
+    <div className="w-full px-[5vw] lg:px-0 lg:w-1/3 ">
       <img
         src="Slicing/header/about-image.jpg"
         alt=""

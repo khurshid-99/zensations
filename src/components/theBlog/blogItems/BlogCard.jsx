@@ -51,8 +51,25 @@ const BlogCards = () => {
   ]);
 
   return (
-    <div className="w-full h-[45vh]  px-[10vw] font-poppins flex flex-nowrap shrink-0 overflow-x-hidden gap-x-5 ">
-      <Swiper grabCursor={true} slidesPerView={3} loop={true}>
+    <div className="w-full h-[39vh] lg:h-[45vh] px-[5vw] lg:px-[10vw] font-poppins flex flex-nowrap shrink-0 overflow-x-hidden gap-x-5 ">
+      <Swiper
+        grabCursor={true}
+        slidesPerView={3}
+        loop={true}
+        centeredSlides={true}
+        breakpoints={{
+          425: {
+            slidesPerView: 1.3,
+            spaceBetween: 5,
+          },
+          768: {
+            slidesPerView: 2,
+          },
+          1024: {
+            slidesPerView: 3,
+          },
+        }}
+      >
         {cardDetiles.map((card, index) => (
           <div key={index}>
             <SwiperSlide>
@@ -63,6 +80,9 @@ const BlogCards = () => {
                 description={card.description}
                 name={card.name}
                 time={card.time}
+                minImgStyle="rounded-3xl"
+                imgPrand="h-[19vh] "
+                mainDiv="w-[65vw] lg:w-[25vw] h-full "
               />
             </SwiperSlide>
           </div>

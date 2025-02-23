@@ -1,7 +1,7 @@
 const FooterItems = () => {
   return (
-    <footer className="w-full lg:h-full bg-black lg:px-[10vw] lg:pt-[5vw] lg:pb-[3vw] ">
-      <div className="w-full flex justify-between items-center">
+    <footer className="w-full lg:h-full bg-[black] px-[5vw] lg:px-[10vw] pt-[5vw] lg:pb-[3vw]  ">
+      <div className="w-full  flex flex-col lg:flex-row  justify-between items-center">
         <section>
           <img src="/Slicing/header/logo.png" alt="" />
           <h4 className="mt-10 text-[#f1f1f1b4] text-[1.2rem] font-light ">
@@ -11,7 +11,7 @@ const FooterItems = () => {
             drive results and transform businesses
           </h4>
         </section>
-        <aside className="w-1/2 flex items-start justify-between text-[#f1f1f1b4]">
+        <aside className="w-full lg:w-1/2 mt-10 lg:mt-0 flex items-start justify-between text-[#f1f1f1b4]">
           <div>
             <h1 className="text-[#01FFF4] uppercase text-[1.2rem]  ">
               Quick Link
@@ -77,15 +77,15 @@ const FooterItems = () => {
           </div>
         </aside>
       </div>
-      <div className="w-full text-[#f1f1f1b4] flex justify-between mt-20  ">
-        <div className="flex">
-          <h1>&copy; 2025 All Right Reserved </h1>
-          <div className="ml-35"> 
+      <div className="w-full text-[#f1f1f1b4] flex flex-col lg:flex-row  justify-between mt-10 lg:mt-20 ">
+        <div className="flex flex-col gap-5 lg:gap-0 lg:flex-row">
+          <h1 className="text-nowrap">&copy; 2025 All Right Reserved </h1>
+          <div className="lg:ml-35 flex  ">
             <select
               name=""
               id=""
-              className="appearance-none bg-no-repeat bg-[center_right_12px] border border-[#f1f1f156] rounded py-1 px-4 pr-20 object-center outline-none mr-2 "
-              style={{backgroundImage: "url('Slicing/footer/arrow.png')"}}
+              className="appearance-none bg-no-repeat bg-[center_right_12px] border border-[#f1f1f156] rounded py-1 px-4 pr-10 lg:pr-20 object-center outline-none mr-2 "
+              style={{ backgroundImage: "url('Slicing/footer/arrow.png')" }}
             >
               <option value="" className="text-black bg-gray-200">
                 Contact Us
@@ -103,7 +103,7 @@ const FooterItems = () => {
             </select>
           </div>
         </div>
-        <div className="flex items-center gap-10 capitalize text-[#01FFF4] ">
+        <div className="flex items-center gap-20 lg:gap-10 capitalize my-5 lg:mb-0 text-[#01FFF4] ">
           <h2>terms</h2>
           <h2>Privacy</h2>
         </div>

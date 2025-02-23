@@ -6,7 +6,7 @@
 
 @keyframes scrollLeft {
   to {
-    left: -24%;
+    left: -30%;
   }
 }
 
@@ -25,3 +25,5 @@
 .brand-5 {
   animation-delay: calc(20s / 5 * (5 - 5) * -1);
 }
+
+

@@ -25,13 +25,16 @@ const PortfolioCards = () => {
             key={card.projectName}
             img={card.img}
             projectName={card.projectName}
-            imgBg={`${
+            imgRaper={`${
               card.projectName == "Personal Branding"
                 ? "bg-[#A6B9CC] "
-                : "bg-white"
+                : "bg-white  "
             }`}
             name={card.name}
-            styles="bg-white text-black font-semibold px-4 py-2 text-[1.1rem]"
+            styles="bg-[white] text-[black] font-semibold  py-1 px-4 lg:py-2 text-lg lg:text-[1.1rem]"
+            imgStyle="w-full"
+            mainDiv="h-[30vh] "
+            imgDetal="h-[5vh] "
           />
         </div>
       ))}
