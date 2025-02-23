@@ -4,7 +4,7 @@ import PortfolioSection1 from "./portfolioItems/PortfolioSection1";
 const OurPortfolio = () => {
   return (
     <div
-      className="w-full min-h-screen font-poppins relative  "
+      className="w-full min-h-screen font-poppins relative "
       style={{
         background:
           "linear-gradient(360deg, rgba(240,240,240,1) 0%, rgba(240,240,240,1) 53%, rgba(255,255,255,1) 53%, rgba(255,255,255,1) 100%)",
