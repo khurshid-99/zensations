@@ -3,6 +3,7 @@ import { Button } from "../../../template";
 const ElementLeft = () => {
   return (
     <div className="leftElement w-full lg:w-1/2 lg:min-h-[100vh] border-1 border-primary font-poppins ">
+      {/* ux & ui */}
       <section className="UxUi w-full lg:h-[80vh] py-[5vw] px-[5vw] lg:py-[10vw] lg:pl-[5vw]  ">
         <div className="w-full lg:w-[20vw]">
           <h3 className="text-secondary border-1 lg:border-2 border-black w-fit rounded-[7px] px-1 py-1 font-bold">
@@ -35,11 +36,11 @@ const ElementLeft = () => {
       </section>
 
       <div className="w-[90%] lg:w-[80%] h-[1.2px] mx-auto bg-primary "></div>
-
+      {/* marketing */}
       <section className="marketing w-full lg:h-[80vh] py-[5vw] px-[5vw] lg:py-[10vw] lg:pl-[5vw]  ">
         <div className="w-full lg:w-[22.5vw]  ">
           <img src="/Slicing/header/marketing.png" alt="" />
-          <div className="flex items-center justify-between lg:my-[3vw] ">
+          <div className="flex items-center justify-between my-[3vw] ">
             <h1 className="text-2xl lg:text-[1.3vw] font-medium">Marketing</h1>
             <img src="/Slicing/header/arrow-4.png" alt="" />
           </div>

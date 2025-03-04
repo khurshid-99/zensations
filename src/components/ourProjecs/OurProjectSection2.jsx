@@ -1,7 +1,7 @@
 import { motion } from "motion/react";
 const OurProjectSection2 = () => {
   return (
-    <div className=" w-full h-[10vh] lg:h-[25vh] flex items-center gap-5 lg:-mt-12 ">
+    <div className=" w-full h-[15vh] lg:h-[25vh] flex items-center gap-5 lg:-mt-12 ">
       <motion.div
         initial={{ x: 0 }}
         animate={{ x: "-100%" }}
