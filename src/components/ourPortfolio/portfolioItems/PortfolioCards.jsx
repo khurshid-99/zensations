@@ -33,8 +33,8 @@ const PortfolioCards = () => {
             name={card.name}
             styles="bg-[white] text-[black] font-semibold  py-1 px-4 lg:py-2 text-lg lg:text-[1.1rem]"
             imgStyle="w-full"
-            mainDiv="h-[30vh] "
-            imgDetal="h-[5vh] "
+            mainDiv="h-[33vh] "
+            imgDetal="h-[7vh] "
           />
         </div>
       ))}
