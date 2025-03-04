@@ -37,15 +37,15 @@ const Hero = () => {
   });
 
   return (
-    <div className="w-full h-[50vh] bg-[#F4F4F4] lg:h-[90vh] px-[5vw] relative ">
+    <div className="w-full h-[65vh] bg-[#F4F4F4] lg:h-[90vh] px-[5vw] relative ">
       <div className="absolute top-0 right-[5vw] "></div>
       <section className="section-1 w-full lg:h-1/2 font-poppins lg:px-[5vw] lg:pt-[2.05vw] relative  ">
         <h1 className="text-2xl lg:text-[6vw] font-poppins lg:font-light relative z-9  ">
           We create
         </h1>
 
-        <div className="w-full h-[7.5vw] flex items-center text-2xl lg:text-[6vw] lg:-mt-6 font-bold relative ">
-          <div className=" w-[21vw] h-full overflow-hidden relative z-99 ">
+        <div className="w-full h-[8vw] lg:h-[7.5vw] flex items-center text-2xl lg:text-[6vw] lg:-mt-6 font-bold relative ">
+          <div className=" w-[25vw] lg:w-[21vw] h-full overflow-hidden relative z-99 ">
             {/* ------ */}
             <div className="w-full h-full   ">
               <div
@@ -54,7 +54,7 @@ const Hero = () => {
               ></div>
               <h1
                 ref={text1Ref}
-                className="bg_text_animition z-80 top-0 left-0 absolute lg:-mt-1.5 "
+                className="bg_text_animition z-80 top-0 left-0 absolute -mt-[2.5px] lg:-mt-1.5 "
               >
                 Digital
               </h1>
@@ -68,7 +68,7 @@ const Hero = () => {
               ></div>
               <h1
                 ref={text2Ref}
-                className="bg_text_animition z-78 top-0 left-0 absolute lg:-mt-1.5 "
+                className="bg_text_animition z-78 top-0 left-0 absolute -mt-[2.5px] lg:-mt-1.5 "
               >
                 UX&UI
               </h1>
@@ -80,7 +80,7 @@ const Hero = () => {
           </div>
         </div>
 
-        <h1 className=" text-[5.7vw] pl-[28.5vw] font-bold ">That work</h1>
+        <h1 className="text-[7.5vw] lg:text-[5.7vw] pl-[28.5vw] font-bold ">That work</h1>
       </section>
 
       <section className="section-2 relative mt-10 lg:mt-0 lg:flex lg:justify-between lg:items-center lg:h-1/2  ">
@@ -93,9 +93,9 @@ const Hero = () => {
             style="bg-black text-white py-5 px-[3.5rem] "
           />
         </div>
-        <div className="lg:h-full lg:w-1/2 font-poppins lg:pl-[3.5vw]  ">
+        <div className="lg:h-full lg:w-1/2 font-poppins lg:pl-[3.5vw] ">
           <p
-            className="lg:w-full lg:text-[1.3rem] lg:mt-[3vw]  
+            className="lg:w-full lg:text-[1.3rem] lg:mt-[3vw] 
            "
           >
             Elevating communication, marketing, <br />
@@ -104,27 +104,26 @@ const Hero = () => {
             <span className="font-semibold inline-block ml-2 ">
               digital expriences
             </span>
-            <br /> targeted campaigns,
-            <span className="font-semibold inline-block ">
+            <br /> targeted campaigns, 
+             <span className="font-semibold inline-block ">
               brand identities
             </span>
             that <br />
             drive results and transfrom businesses
           </p>
           <div className="">
-            
             <Button
               name="case studies"
               imgS="ml-2"
               img={`${Arrow2}`}
-              style="bg-[#fff] lg:px-[2rem] lg:py-3 lg:text-[.9rem] uppercase mt-[2.5rem] font-semibold lg:ml-0 ml-[45vw] px-5 py-3 "
+              style="bg-[#fff] lg:px-[2rem] lg:py-3 lg:text-[.9rem] uppercase mt-[2.5rem] font-semibold lg:ml-0 ml-[45vw] px-5 py-3 text-nowrap  "
             />
             <Button
               name="SEE OUR WORK"
               img={Arrow}
               imgS="ml-3"
-              btnPerent="lg:hidden visible"
-              style="bg-black text-white py-3 px-5 mt-6  "
+              btnPerent="lg:hidden visible  "
+              style="bg-black text-white py-3 px-5 mt-[12.8vw] lg:mt-6  "
             />
           </div>
         </div>
