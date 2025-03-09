@@ -1,21 +1,21 @@
 import { useGSAP } from "@gsap/react";
 import gsap from "gsap";
-import { tr } from "motion/react-client";
+
 
 const ElementRight = () => {
-  useGSAP(() => {
-    gsap.from(".img-2", {
-      y: "100vh",
-      // opacity: 0,
-      scrollTrigger: {
-        trigger: ".leftElement",
-        scrub: true,
-        start: "top top",
-        end: "top -70%",
-        // markers: true,
-      },
-    });
-  });
+  // useGSAP(() => {
+  //   gsap.from(".img-2", {
+  //     y: "100vh",
+  //     // opacity: 0,
+  //     scrollTrigger: {
+  //       trigger: ".leftElement",
+  //       scrub: true,
+  //       start: "top top",
+  //       end: "top -70%",
+  //       // markers: true,
+  //     },
+  //   });
+  // });
 
   useGSAP(() => {
     let tl = gsap.timeline({
@@ -24,7 +24,7 @@ const ElementRight = () => {
         scrub: 2,
         start: "top top",
         end: "top -70%",
-        markers: true,
+        // markers: true,
       },
     });
     tl.to(".displacement", {
